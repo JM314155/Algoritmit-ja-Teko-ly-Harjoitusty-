@@ -19,14 +19,4 @@ Tila/aikavaatimus tarkoitus olisi olla O(1), koska pelissä ei ole huomattavasti
 Päivitän myöhemmin lisää, mutta saatan käyttää Introduction to Artificial Intelligence, 2025, DATA15001 kurssin materiaaleja, muuten yleisiä lähteitä/tämän kurssin.
 ## Harjoitustyön Ydin. Kuvaile määrittelydokumenttiin muutamalla lauseella, mikä on aiheesi ydin. Käytä tähän aikaa koska se auttaa harjoitustyön toteuttamisessa. Vaikka koko työhön tarvitaan muutakin kuin sen ytimeen liittyvää koodia, suurin osa kehitykseen käytettävästä ajasta pitäisi kuluttaa juurikin ytimen kehitykseen. Suunnittele ajankäyttösi niin.
 Harjoitustyön ydin on toteuttaa Kivi–sakset–paperi peliin älykäs tietokonevastustaja, joka oppii pelaajan käyttäytymisestä ja pyrkii voittamaan ennakoimalla tulevia siirtoja. Tekoäly perustuu yksinkertaisiin tilastollisiin menetelmiin, kuten taajuusanalyysiin ja Markovin ketjuihin. Työn pääpaino on algoritmin kehittämisessä, joka analysoi pelaajan historiaa ja valitsee sen perusteella optimaalisen vastasiirron
-### Viikko raportti 1
-## Mitä olen tehnyt tällä viikolla?
-Olen päättänyt aiheen ja tutkinut sitä ja sen teorioita
-## Miten ohjelma on edistynyt?
-Ohjelmasta ei ole vielä koodia mutta idea ja toteutussuunnitelma on
-## Mitä opin tällä viikolla / tänään?
-Olen tutkinut eniten markovin ketjuista ja muita ideoita
-## Mikä jäi epäselväksi tai tuottanut vaikeuksia?
-Ei tällä hetkellä mikään 
-## Mitä teen seuraavaksi?
-Seuraavaksi käytännön toteutus
+
