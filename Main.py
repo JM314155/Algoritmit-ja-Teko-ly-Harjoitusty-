@@ -22,7 +22,6 @@ def pelaa():
         
         print(f"AI: {koneen_siirto}")
 
-        # 2. Tarkistetaan voittaja
         if pelaaja == koneen_siirto:
             print("Tasapeli")
         elif (pelaaja == "Kivi" and koneen_siirto == "Sakset") or \
