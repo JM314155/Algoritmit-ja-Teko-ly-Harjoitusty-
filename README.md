@@ -1,22 +1,48 @@
 # Algoritmit-ja-Teko-ly-Harjoitustyö-
 Kivi-Sakset-Paperi
 ## ALGO, Tietojenkäsittelytieteen kandidaatti (TKT), Suomi
-Kivi-Sakset-Paperi
-### Määrittelydokumentti
-## Mitä ohjelmointikieltä käytät?
-Käytän pääosin pythonia 
-## Kerro myös mitä muita kieliä hallitset siinä määrin, että pystyt tarvittaessa vertaisarvioimaan niillä tehtyjä projekteja.
-Tiedän jonkin verran c++ tai c# 
-## Mitä algoritmeja ja tietorakenteita toteutat työssäsi?
-Yleinen random algoritmi, Taajuusanalyysialgoritmi, markovin ketju ja ehkä q-learning. Tietorakenteista lista, sanakirja ja ehkä numpy avulla matriisit
-## Minkä ongelman ratkaiset?
-Tavoitteena on tehdä algoritmi, joka pystyy oppimaan/päättelemään pelaajan todennäköiset seuraavat siirrot
-## Mitä syötteitä ohjelma saa ja miten niitä käytetään?
-Pelaajan siirto/aiemmat siirrot ja ehkä voi säätää vaikeustasoa
-## Tavoitteena olevat aika- ja tilavaativuudet (esim. O-analyysit)
-Tila/aikavaatimus tarkoitus olisi olla O(1), koska pelissä ei ole huomattavasti siirtovaihtoehtoja, ehkä pitemmässä pelissä voi olla hitaampaa, mutta pyrkimys O(1)
-## Lähteet, joita aiot käyttää
-Päivitän myöhemmin lisää, mutta saatan käyttää Introduction to Artificial Intelligence, 2025, DATA15001 kurssin materiaaleja, muuten yleisiä lähteitä/tämän kurssin.
-## Harjoitustyön Ydin. Kuvaile määrittelydokumenttiin muutamalla lauseella, mikä on aiheesi ydin. Käytä tähän aikaa koska se auttaa harjoitustyön toteuttamisessa. Vaikka koko työhön tarvitaan muutakin kuin sen ytimeen liittyvää koodia, suurin osa kehitykseen käytettävästä ajasta pitäisi kuluttaa juurikin ytimen kehitykseen. Suunnittele ajankäyttösi niin.
-Harjoitustyön ydin on toteuttaa Kivi–sakset–paperi peliin älykäs tietokonevastustaja, joka oppii pelaajan käyttäytymisestä ja pyrkii voittamaan ennakoimalla tulevia siirtoja. Tekoäly perustuu yksinkertaisiin tilastollisiin menetelmiin, kuten taajuusanalyysiin ja Markovin ketjuihin. Työn pääpaino on algoritmin kehittämisessä, joka analysoi pelaajan historiaa ja valitsee sen perusteella optimaalisen vastasiirron
 
+Tämä on Aineopintojen harjoitustyö: Algoritmit ja tekoäly harjoitustyö, jossa on toteutettu Kivi-Sakset-Paperi peliä pelaava tekoäly. Tekoäly analysoi pelaajan aiemmat siirrot ja pyrkii oppimaan niistä käyttämällä taajuusanalyysiä, Markovin ketjuja sekä kuvioiden tunnistusta (Pattern Matching).
+
+Tekoäly hyödyntää useita rinnakkaisia algoritmeja:
+* Taajuusanalyysi: Laskee pelaajan yleisimmät siirrot.
+* Markovin ketjut: Ennustaa seuraavan siirron edellisten siirtojen perusteella.
+* Kuvioiden tunnistus (Pattern Matching): Etsii historiasta toistuvia syklejä.
+* Summamenetelmä: Tekee lopullisen päätöksen yhdistämällä eri algoritmien tulokset.
+
+## Dokumentaatio
+
+Kaikki projektin dokumentit löytyvät kansiosta `Raportit/`:
+* [Määrittelydokumentti](Raportit/Dokumentaatio/Määrittelydokumentti.md)
+* [Toteutusdokumentti](Raportit/Dokumentaatio/Toteutusdokumentti.md)
+* [Testausdokumentti](Raportit/Dokumentaatio/Testausdokumentti.md)
+* [Viikkoraportit](Raportit/Viikkoraportit/)
+
+## Asennus ja käynnistys
+
+
+## 1 Asenna riippuvuudet:
+   - poetry install
+
+## 2 Käynnistä peli:
+- poetry run python3 src/Main.py
+
+Peliä pelataan komentoriviltä kirjoittamalla **Kivi**, **Sakset** tai **Paperi**. Pelin voi lopettaa syöttämällä **L**.
+
+## Testaus
+
+Projektin testit on toteutettu pytest kirjastolla.
+
+## Yksikkötestien ajaminen
+### Aja kaikki testit komennolla:
+- export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+- poetry run pytest src/tests
+
+## Testikattavuus
+Testikattavuusraportin saa ajamalla:
+- poetry run coverage run --branch -m pytest src/tests
+- poetry run coverage report -m
+
+## Suorituskykytestaus
+### aja suorituskykytesti (10 000 simuloitua kierrosta):
+- poetry run python3 src/performance.py
