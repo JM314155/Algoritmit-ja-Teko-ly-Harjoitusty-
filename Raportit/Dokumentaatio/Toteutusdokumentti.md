@@ -16,7 +16,7 @@ Koska peli vaatii välitöntä reaktioaikaa ja siirtovaihtoehtoja on vain kolme,
 *   **Sum-luokka:** Kutsuu moduuleja, joten aikavaativuus on O(1).
 
 ## Työn mahdolliset puutteet ja parannusehdotukset
-Tällä hetkellä Sum luokka käyttää aika yksinkertaista enemmistöäänestystä, Vaikka ohjelma pitää kirjaa moduulien osumatarkkuudesta (self.wins), tätä dataa ei vielä aktiivisesti käytetä painottamaan parhaiten pärjäävän moduulin ääntä. Jatkossa algoritmi voisi antaa suuremman painoarvon sille tekoälylle, jolla on suurin osumaprosentti.
+Tällä hetkellä Sum luokka käyttää aika yksinkertaista enemmistöäänestystä, Vaikka ohjelma pitää kirjaa moduulien osumatarkkuudesta (self.wins), tätä dataa ei vielä aktiivisesti käytetä painottamaan parhaiten pärjäävän moduulin ääntä. Jatkossa algoritmi voisi antaa suuremman painoarvon sille tekoälylle, jolla on suurin osumaprosentti. Olisi myös voinut lisätä esim. pisteytys algoritmin joka olisi pisteteyttänyt algortimit ja sen avulla pystyisi ennustamaan paremmin tulevia huomioimalla aikeisemmat erehdykset.
 ## Laajojen kielimallien (ChatGPT yms.) käyttö. Mainitse mitä mallia on käytetty ja miten. Mainitse myös mikäli et ole käyttänyt. Tämä on tärkeää!
 Yliopiston Currechattia/GPT on käytetty koodin virheanalyysissa sekä koodin korjaamisessa sekä tiivistämisessä/siistimisessä/optimoinnissa
 VSCode CoPilot Ehdotuksista/analyysissä/virheenkorjaamisessa/kommentoinnissa ja hienosäätämisessä.
