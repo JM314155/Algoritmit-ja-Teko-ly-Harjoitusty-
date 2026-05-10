@@ -36,10 +36,12 @@ Algoritmi etsii historiasta tietyn pituista sarjaa ($N$) ja tarkistaa mikä siir
 * $(i_{t-N}, \dots, i_t)$: $N$:n pituinen siirtohistoria (kuvio).
 * $\text{depth}$: Historian pituus, jota algoritmi tarkastelee (oletuksena 3).
   
-##Summamenetelmä: Tekee lopullisen päätöksen yhdistämällä eri algoritmien tulokset.
+## Summamenetelmä: Tekee lopullisen päätöksen yhdistämällä eri algoritmien tulokset.
 
 **Ennusteen valinta:**
+```math 
 $$\hat{I}_{pelaaja} = \arg\max_{i} \sum_{k=1}^{n} [P_k = i]$$
+```
 
 **Lopullinen vastasiirto:**
 ```math
