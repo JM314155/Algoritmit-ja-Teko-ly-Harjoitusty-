@@ -5,7 +5,7 @@ Kivi-Sakset-Paperi
 Tämä on Aineopintojen harjoitustyö: Algoritmit ja tekoäly harjoitustyö, jossa on toteutettu Kivi-Sakset-Paperi peliä pelaava tekoäly. Tekoäly analysoi pelaajan aiemmat siirrot ja pyrkii oppimaan niistä käyttämällä taajuusanalyysiä, Markovin ketjuja sekä kuvioiden tunnistusta (Pattern Matching).
 
 Tekoäly hyödyntää useita rinnakkaisia algoritmeja:
-##Taajuusanalyysi: Laskee pelaajan yleisimmät siirrot.
+## Taajuusanalyysi: Laskee pelaajan yleisimmät siirrot.
 * Algoritmi seuraa kunkin siirron esiintymiskertoja pelihistorian ajalta ja ennustaa seuraavaksi siirroksi pelaajan tilastollisesti suosituimman valinnan.
 
 **Kaava:**
