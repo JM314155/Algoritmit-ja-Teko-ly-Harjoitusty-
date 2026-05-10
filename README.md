@@ -34,7 +34,7 @@ Algoritmi etsii historiasta tietyn pituista sarjaa ($N$) ja tarkistaa mikä siir
 \hat{i}_{t+1} = \arg\max_{i} \text{count}((i_{t-N}, \dots, i_t) \to i)
 ```
 * $(i_{t-N}, \dots, i_t)$: $N$:n pituinen siirtohistoria (kuvio).
-* $\text{depth}$: Historian pituus, jota algoritmi tarkastelee (oletuksena 3).
+* $\text{depth}$: Historian pituus, jota algoritmi tarkastelee.
   
 ## Summamenetelmä: Tekee lopullisen päätöksen yhdistämällä eri algoritmien tulokset.
 
