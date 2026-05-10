@@ -40,7 +40,7 @@ Algoritmi etsii historiasta tietyn pituista sarjaa ($N$) ja tarkistaa mikä siir
 
 **Ennusteen valinta:**
 ```math 
-$$\hat{I}_{pelaaja} = \arg\max_{i} \sum_{k=1}^{n} [P_k = i]$$
+$$\hat{I}_{pelaaja} = \arg\max_{i} \sum_{k=1}^{n} [P_k = i]
 ```
 
 **Lopullinen vastasiirto:**
