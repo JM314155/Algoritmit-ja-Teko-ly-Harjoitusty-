@@ -9,8 +9,9 @@ Tekoäly hyödyntää useita rinnakkaisia algoritmeja:
 * Algoritmi seuraa kunkin siirron esiintymiskertoja pelihistorian ajalta ja ennustaa seuraavaksi siirroksi pelaajan tilastollisesti suosituimman valinnan.
 
 **Kaava:**
-$$\hat{i}_{t+1} = \arg\max_{i \in \{K, S, P\}} \text{count}(i)$$
-
+```math
+\hat{i}_{t+1} = \arg\max_{i \in \{K, S, P\}} \text{count}(i)
+```
 * $i$: Siirto (Kivi, Sakset tai Paperi).
 * $\text{count}(i)$: siirron kokonaismäärä historiassa.
 
