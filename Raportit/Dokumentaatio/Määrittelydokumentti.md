@@ -4,7 +4,7 @@ Käytän pääosin pythonia
 ## Kerro myös mitä muita kieliä hallitset siinä määrin, että pystyt tarvittaessa vertaisarvioimaan niillä tehtyjä projekteja.
 Tiedän jonkin verran c++ tai c# 
 ## Mitä algoritmeja ja tietorakenteita toteutat työssäsi?
-Työssä käytetään siirtojen ennakointiin Taajuusanalyysia, Markov-mallia ja yleistä kuvio tunnistus algoritmia. Näitä painotetaan algoritmiin Wang et al menetelmän avulla, joka ottaa huomioon datan määrä siitä painotuksen. 
+Työssä käytetään siirtojen ennakointiin Taajuusanalyysia, Markov-mallia ja yleistä kuvio tunnistus algoritmia. Näitä painotetaan algoritmiin Wang et al menetelmän avulla, joka ottaa huomioon datan määrä siitä painotuksen. Laajennuksena toteutettiin MarkovOrder (kertaluvut 5 asti) sekä MultiMarkov-valitsin, joka toteuttaa Wang et al. dynaamisen mallinvalinnan fokuspituus-ikkunalla.
 Tietorakenteista lista, sanakirja ja ehkä numpy avulla matriisit
 ## Minkä ongelman ratkaiset?
 Tavoitteena on tehdä algoritmi, joka pystyy oppimaan/päättelemään pelaajan todennäköiset seuraavat siirrot

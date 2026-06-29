@@ -18,5 +18,5 @@ class TestSum(unittest.TestCase):
             self.ai.update_all('Kivi')
         
        
-        koneen_siirto = self.ai.get_move()
-        self.assertEqual(koneen_siirto, 'Paperi')
+        ai_move = self.ai.get_move()
+        self.assertEqual(ai_move, 'Paperi')
